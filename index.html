@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Interaktif</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Halaman 1 -->
+  <div id="page-1" class="page page-background">
+    <video autoplay loop muted class="background-video">
+      <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <audio autoplay loop>
+      <source src="audio/background1.mp3" type="audio/mp3">
+      Your browser does not support the audio tag.
+    </audio>
+    <div class="content">
+      <h1>Assalamualaikum, saya adalah web yang dibuat oleh Hisyam</h1>
+      <input type="text" id="name-input" placeholder="Masukkan Nama Kamu" />
+      <button onclick="goToPage2()">Selanjutnya</button>
+    </div>
+  </div>
+
+  <!-- Halaman 2 -->
+  <div id="page-2" class="page page-background">
+    <video autoplay loop muted class="background-video">
+      <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <audio autoplay loop>
+      <source src="audio/background2.mp3" type="audio/mp3">
+      Your browser does not support the audio tag.
+    </audio>
+    <div class="content">
+      <h2>Apakah kamu kangen dengan akuhh yang gemoy ini?</h2>
+      <input type="text" id="kangen-input" placeholder="Jawab disini" />
+      <button onclick="goToPage3()">Selanjutnya</button>
+    </div>
+  </div>
+
+  <!-- Halaman 3 -->
+  <div id="page-3" class="page page-background">
+    <video autoplay loop muted class="background-video">
+      <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <audio autoplay loop>
+      <source src="audio/background3.mp3" type="audio/mp3">
+      Your browser does not support the audio tag.
+    </audio>
+    <div class="content">
+      <h2>Ayukkk kita kumpul lagi, bestiehh!</h2>
+      <input type="text" id="group-input" placeholder="Masukkan pilihanmu" />
+      <div class="gallery">
+        <img src="https://via.placeholder.com/300x200?text=Wisata+1" alt="Wisata 1" onclick="selectImage(1)" />
+        <img src="https://via.placeholder.com/300x200?text=Wisata+2" alt="Wisata 2" onclick="selectImage(2)" />
+        <img src="https://via.placeholder.com/300x200?text=Wisata+3" alt="Wisata 3" onclick="selectImage(3)" />
+      </div>
+      <button onclick="goToPage4()">Selesai</button>
+    </div>
+  </div>
+
+  <!-- Halaman 4: Terimakasih Bestiehh -->
+  <div id="page-4" class="page page-background">
+    <video autoplay loop muted class="background-video">
+      <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <audio autoplay loop>
+      <source src="audio/background4.mp3" type="audio/mp3">
+      Your browser does not support the audio tag.
+    </audio>
+    <div class="content">
+      <h1>Terimakasih ya Bestiehh!</h1>
+      <p>Sudah berpartisipasi dengan seru di web ini! Sampai jumpa lagi!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
